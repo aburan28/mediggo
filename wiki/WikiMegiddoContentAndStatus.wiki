@@ -4,7 +4,7 @@
 
 Megiddo get new features regularly. At the present time, here are the cryptanalysis techniques available:
 
-* Detection of weakly implemented or weakly used encryption system in stream cipher mode (Vernam ciphers, pseudo-random stram ciphers, block ciphers in stream cipher mode). This covers also the case of intentional implementation or mathematical backdoors (for some of them)
+* Detection of weakly implemented or weakly used encryption system in stream cipher mode (Vernam ciphers, pseudo-random stream ciphers, block ciphers in stream cipher mode). This covers also the case of intentional implementation or mathematical backdoors (for some of them)
 
 * Cryptanalysis of the above-mentioned cases. The encryption system can remain unknown and the attack does not require any brute force key search
 
@@ -27,13 +27,13 @@ This library has been tested successfully under Linux SuSe x64 (gcc 4.4.1; branc
  * Texts/..... Subdirectory containing various texts to produce a corpus
  * working_corpus  ..... Working corpus (4-grams over a 96-character alphabet)
 
- * Ciphertexts/..... Directory containing various ciphertexts to play with (detection step mainly; decryption left as exercice)
+ * Ciphertexts/..... Directory containing various ciphertexts to play with (detection step mainly; decryption left as exercise)
  * Ciphertexts2/..... Directory containing various ciphertexts to play with (detection and decryption)
 
  * Decryption/..... Directory containing programs and data to decrypt parallel texts
  * working_corpus..... Working corpus (4-grams over a 96-character alphabet)
  * decrypt_para.c..... program to decrypt up to 5 parallel ciphertexts
- * decipher.c..... Decipher an encypted text with the random sequence recovered
+ * decipher.c..... Decipher an encrypted text with the random sequence recovered
 
  * Docs/..... Technical papers and slides
  * hack_lu2010_tutorial.pdf..... Hack.lu 2010 Tutorial to practice with Megiddo
