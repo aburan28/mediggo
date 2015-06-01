@@ -1,0 +1,41 @@
+**Present content and status of Megiddo: the open source cryptanalysis library**
+
+# Introduction #
+
+Megiddo get new features regularly. At the present time, here are the cryptanalysis techniques available:
+
+**Detection of weakly implemented or weakly used encryption system in stream cipher mode (Vernam ciphers, pseudo-random stream ciphers, block ciphers in stream cipher mode). This covers also the case of intentional implementation or mathematical backdoors (for some of them)**
+
+**Cryptanalysis of the above-mentioned cases. The encryption system can remain unknown and the attack does not require any brute force key search**
+
+**Tools to build statistical model (corpus) of natural languages**
+
+**Tool to extract encrypted data from Office documents (Word and Excel; up to Office 2003)**
+
+This library has been tested successfully under Linux SuSe x64 (gcc 4.4.1; branch [revision 150839](https://code.google.com/p/mediggo/source/detail?r=150839)).
+
+# Content of the archive (release 0.2.0) #
+
+  * content.txt.....This file
+  * meddigo.h.......General header file for the Meddigo library
+  * texte\_extract.c...... Extract encrypted data in MS Word and MS Excel document (up to Office 2003).
+  * detect.c..... Detect parallel (aka weak) ciphertexts in a ciphertext directory.Weak ciphertexts can be produced by stream ciphers (pseudo-random generators or Vernam systems) or by block ciphers in stream cipher mode.
+
+  * Corpus/..... Directory containing data to produce statistical models (aka corpus) from plaintexts
+  * create\_corpus.c......Program to create 4-grams corpus (4 is the optimal value)
+  * corpus.h..... The header file containing everything to manage corpus (hash table...)
+  * Texts/..... Subdirectory containing various texts to produce a corpus
+  * working\_corpus  ..... Working corpus (4-grams over a 96-character alphabet)
+
+  * Ciphertexts/..... Directory containing various ciphertexts to play with (detection step mainly; decryption left as exercise)
+  * Ciphertexts2/..... Directory containing various ciphertexts to play with (detection and decryption)
+
+  * Decryption/..... Directory containing programs and data to decrypt parallel texts
+  * working\_corpus..... Working corpus (4-grams over a 96-character alphabet)
+  * decrypt\_para.c..... program to decrypt up to 5 parallel ciphertexts
+  * decipher.c..... Decipher an encrypted text with the random sequence recovered
+
+  * Docs/..... Technical papers and slides
+  * hack\_lu2010\_tutorial.pdf..... Hack.lu 2010 Tutorial to practice with Megiddo
+  * filiol\_bhe10\_slides.pdf..... Black Hat Europe 2010 slides
+  * filiol\_wp\_bhe10\_vlast.pdf..... Black Hat Europe 2010 white paper

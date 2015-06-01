@@ -1,0 +1,18 @@
+Solution of the Hack.lu 2010 Cryptanalysis Workshop
+
+# Introduction #
+
+During the Hack.lu 2010 I gave, a few attendee did not succeeding decrypting thesample encrypted texts provided. For obscure reasons, it seems that the program behave differently according to the (gcc) compiler version.
+
+
+# Details #
+
+So to enable everyone to experiment successfully, you will find here the following
+data:
+
+  * binary file of decrypt\_para program
+  * binary file of decipher program
+  * the solution for pseudo-random sequence
+
+I am looking forward your feedback and know why for some of you the program behaves strangely.
+My email address is ffiliol@gmail.com
